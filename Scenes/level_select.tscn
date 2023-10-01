@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu4tx5366rqti"]
+
+[ext_resource type="Script" path="res://Scenes/level_select.gd" id="1_l163q"]
+[ext_resource type="FontFile" uid="uid://bib6shgdyoh44" path="res://Assets/Aclonica.ttf" id="2_0a7s4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a08d6"]
+bg_color = Color(0.364706, 0.301961, 0.6, 1)
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color(0.8, 0, 0.0235294, 1)
+border_blend = true
+
+[node name="level_select" type="Control"]
+custom_minimum_size = Vector2(1152, 648)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l163q")
+
+[node name="bg" type="Panel" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_a08d6")
+metadata/_edit_use_anchors_ = true
+
+[node name="grid" type="GridContainer" parent="."]
+layout_mode = 0
+anchor_left = 0.0512153
+anchor_top = 0.087963
+anchor_right = 0.943576
+anchor_bottom = 0.901235
+theme_override_constants/h_separation = 45
+theme_override_constants/v_separation = 45
+columns = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Menu" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0147569
+anchor_top = 0.901235
+anchor_right = 0.147569
+anchor_bottom = 0.976852
+theme_override_fonts/font = ExtResource("2_0a7s4")
+theme_override_font_sizes/font_size = 28
+text = "To Menu"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]

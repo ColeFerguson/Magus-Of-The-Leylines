@@ -1,0 +1,1073 @@
+[gd_scene load_steps=6 format=3 uid="uid://p7vjwiekvmen"]
+
+[ext_resource type="Script" path="res://Scenes/Levels/level_3.gd" id="1_0c1kv"]
+[ext_resource type="SpriteFrames" uid="uid://dkg5r587rtpur" path="res://Assets/sky_anim.tres" id="2_lgbrd"]
+[ext_resource type="TileSet" uid="uid://bt37p25lfubdf" path="res://Scenes/Levels/level_tileset.tres" id="3_oy3yu"]
+[ext_resource type="PackedScene" uid="uid://doiabxb1tqnvy" path="res://Scenes/level_title.tscn" id="4_nrrbx"]
+[ext_resource type="PackedScene" uid="uid://df7i4jhygdk7l" path="res://Scenes/placeable_area.tscn" id="5_qmi1m"]
+
+[node name="level_3" type="Node2D"]
+script = ExtResource("1_0c1kv")
+
+[node name="bg" type="AnimatedSprite2D" parent="."]
+position = Vector2(560, 307)
+scale = Vector2(18.5, 10.5937)
+sprite_frames = ExtResource("2_lgbrd")
+speed_scale = 0.5
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 3
+tile_set = ExtResource("3_oy3yu")
+format = 2
+layer_0/tile_data = PackedInt32Array(2424832, 1, 0, 2424833, 1, 0, 2424834, 1, 0, 2424835, 1, 0, 2424836, 1, 0, 2424837, 1, 0, 2424838, 1, 0, 2424839, 1, 0, 2424840, 1, 0, 2424841, 1, 0, 2424842, 1, 0, 2424843, 1, 0, 2424844, 1, 0, 2424845, 1, 0, 2424846, 1, 0, 2424847, 1, 0, 2424848, 1, 0, 2424849, 0, 0, 2359313, 1, 0, 2359314, 1, 0, 2359315, 1, 0, 2359316, 1, 0, 2359317, 1, 0, 2359318, 1, 0, 2424854, 0, 0, 2424855, 1, 0, 2424856, 1, 0, 2424857, 1, 0, 2424858, 1, 0, 2424859, 1, 0, 2424860, 1, 0, 2424861, 1, 0, 2424862, 1, 0, 2424863, 1, 0, 2424864, 1, 0, 2424865, 1, 0, 2424866, 1, 0, 2424867, 1, 0, 2490404, 1, 0, 2490405, 1, 0, 2490406, 1, 0, 2490407, 1, 0, 2490408, 1, 0, 2490409, 1, 0, 2490410, 1, 0, 2490411, 1, 0, 2490412, 1, 0, 2490413, 1, 0, 2490414, 1, 0, 2490415, 0, 0, 2424879, 1, 0, 2424880, 1, 0, 2424881, 1, 0, 2424882, 1, 0, 2359347, 8, 0, 2359348, 8, 0, 2359349, 8, 0, 2359350, 8, 0, 2359351, 8, 0, 2359352, 8, 0, 2359353, 8, 0, 2359354, 8, 0, 2359355, 8, 0, 2359356, 8, 0, 2359357, 8, 0, 2359358, 8, 0, 2424894, 0, 0, 2424895, 8, 0, 2424896, 8, 0, 2424897, 8, 0, 2424898, 8, 0, 2424899, 8, 0, 2424900, 0, 0, 2359364, 8, 0, 2359365, 8, 0, 2359366, 8, 0, 2359367, 8, 0, 2424903, 0, 0, 2490439, 0, 0, 2555975, 0, 0, 2621511, 0, 0, 2621510, 0, 0, 2621509, 0, 0, 2621508, 0, 0, 2621507, 0, 0, 2621506, 0, 0, 2621505, 0, 0, 2621504, 0, 0, 2621503, 0, 0, 2621502, 0, 0, 2621501, 0, 0, 2621500, 0, 0, 2621499, 0, 0, 2621498, 0, 0, 2621497, 0, 0, 2621496, 0, 0, 2621495, 0, 0, 2621494, 0, 0, 2621493, 0, 0, 2621492, 0, 0, 2621491, 0, 0, 2621490, 0, 0, 2621489, 0, 0, 2621488, 0, 0, 2621487, 0, 0, 2555950, 0, 0, 2555949, 0, 0, 2555948, 0, 0, 2555947, 0, 0, 2555946, 0, 0, 2555945, 0, 0, 2621482, 0, 0, 2621483, 0, 0, 2621484, 0, 0, 2621485, 0, 0, 2621486, 0, 0, 2621481, 0, 0, 2621480, 0, 0, 2621479, 0, 0, 2621478, 0, 0, 2621477, 0, 0, 2621476, 0, 0, 2621475, 0, 0, 2621474, 0, 0, 2621473, 0, 0, 2621472, 0, 0, 2621471, 0, 0, 2621470, 0, 0, 2621469, 0, 0, 2621468, 0, 0, 2621467, 0, 0, 2621466, 0, 0, 2621465, 0, 0, 2621464, 0, 0, 2621463, 0, 0, 2621462, 0, 0, 2621461, 0, 0, 2621460, 0, 0, 2621459, 0, 0, 2621458, 0, 0, 2621457, 0, 0, 2621456, 0, 0, 2621455, 0, 0, 2621454, 0, 0, 2621453, 0, 0, 2621452, 0, 0, 2621451, 0, 0, 2621450, 0, 0, 2621449, 0, 0, 2621448, 0, 0, 2621447, 0, 0, 2621446, 0, 0, 2621445, 0, 0, 2621444, 0, 0, 2621443, 0, 0, 2621442, 0, 0, 2621441, 0, 0, 2621440, 0, 0, 2555904, 0, 0, 2490368, 0, 0, 2490379, 0, 0, 2490378, 0, 0, 2490377, 0, 0, 2490376, 0, 0, 2490375, 0, 0, 2490374, 0, 0, 2490373, 0, 0, 2490372, 0, 0, 2490371, 0, 0, 2490370, 0, 0, 2490369, 0, 0, 2555905, 0, 0, 2555906, 0, 0, 2555907, 0, 0, 2555908, 0, 0, 2555909, 0, 0, 2555910, 0, 0, 2555911, 0, 0, 2555912, 0, 0, 2555913, 0, 0, 2555914, 0, 0, 2555915, 0, 0, 2555916, 0, 0, 2490380, 0, 0, 2490381, 0, 0, 2555917, 0, 0, 2555918, 0, 0, 2490382, 0, 0, 2490383, 0, 0, 2555919, 0, 0, 2555920, 0, 0, 2490384, 0, 0, 2490385, 0, 0, 2555921, 0, 0, 2555922, 0, 0, 2490386, 0, 0, 2424850, 0, 0, 2424851, 0, 0, 2490387, 0, 0, 2555923, 0, 0, 2555924, 0, 0, 2490388, 0, 0, 2424852, 0, 0, 2424853, 0, 0, 2490389, 0, 0, 2555925, 0, 0, 2555926, 0, 0, 2490390, 0, 0, 2490391, 0, 0, 2555927, 0, 0, 2555928, 0, 0, 2490392, 0, 0, 2490393, 0, 0, 2555929, 0, 0, 2555930, 0, 0, 2490394, 0, 0, 2490395, 0, 0, 2555931, 0, 0, 2555932, 0, 0, 2490396, 0, 0, 2490397, 0, 0, 2555933, 0, 0, 2555934, 0, 0, 2490398, 0, 0, 2490399, 0, 0, 2555935, 0, 0, 2555936, 0, 0, 2490400, 0, 0, 2490401, 0, 0, 2555937, 0, 0, 2555938, 0, 0, 2490402, 0, 0, 2490403, 0, 0, 2555939, 0, 0, 2555940, 0, 0, 2555941, 0, 0, 2555942, 0, 0, 2555943, 0, 0, 2555944, 0, 0, 2490430, 0, 0, 2490429, 0, 0, 2424893, 0, 0, 2424892, 0, 0, 2424891, 0, 0, 2424890, 0, 0, 2424889, 0, 0, 2424888, 0, 0, 2424887, 0, 0, 2424886, 0, 0, 2424885, 0, 0, 2424884, 0, 0, 2424883, 0, 0, 2490419, 0, 0, 2490418, 0, 0, 2490417, 0, 0, 2490416, 0, 0, 2555952, 0, 0, 2555951, 0, 0, 2555953, 0, 0, 2555954, 0, 0, 2555955, 0, 0, 2555956, 0, 0, 2490420, 0, 0, 2490421, 0, 0, 2555957, 0, 0, 2555958, 0, 0, 2490422, 0, 0, 2490423, 0, 0, 2555959, 0, 0, 2555960, 0, 0, 2490424, 0, 0, 2490425, 0, 0, 2555961, 0, 0, 2555962, 0, 0, 2490426, 0, 0, 2490427, 0, 0, 2555963, 0, 0, 2555964, 0, 0, 2490428, 0, 0, 2555965, 0, 0, 2555966, 0, 0, 2555967, 0, 0, 2490431, 0, 0, 2490432, 0, 0, 2555968, 0, 0, 2555969, 0, 0, 2490433, 0, 0, 2490434, 0, 0, 2555970, 0, 0, 2555971, 0, 0, 2490435, 0, 0, 2490436, 0, 0, 2555972, 0, 0, 2555973, 0, 0, 2490437, 0, 0, 2424901, 0, 0, 2424902, 0, 0, 2490438, 0, 0, 2555974, 0, 0)
+
+[node name="Particles" type="Node2D" parent="."]
+
+[node name="h" type="Node2D" parent="Particles"]
+position = Vector2(824, 563)
+
+[node name="h227" type="Node2D" parent="Particles"]
+position = Vector2(1071, 328)
+
+[node name="h228" type="Node2D" parent="Particles"]
+position = Vector2(1071, 317)
+
+[node name="h229" type="Node2D" parent="Particles"]
+position = Vector2(1071, 305)
+
+[node name="h230" type="Node2D" parent="Particles"]
+position = Vector2(1071, 296)
+
+[node name="h231" type="Node2D" parent="Particles"]
+position = Vector2(1071, 286)
+
+[node name="h232" type="Node2D" parent="Particles"]
+position = Vector2(1071, 275)
+
+[node name="h233" type="Node2D" parent="Particles"]
+position = Vector2(1114, 275)
+
+[node name="h234" type="Node2D" parent="Particles"]
+position = Vector2(1114, 286)
+
+[node name="h235" type="Node2D" parent="Particles"]
+position = Vector2(1114, 296)
+
+[node name="h236" type="Node2D" parent="Particles"]
+position = Vector2(1114, 305)
+
+[node name="h237" type="Node2D" parent="Particles"]
+position = Vector2(1114, 317)
+
+[node name="h238" type="Node2D" parent="Particles"]
+position = Vector2(1114, 328)
+
+[node name="h239" type="Node2D" parent="Particles"]
+position = Vector2(1114, 328)
+
+[node name="h159" type="Node2D" parent="Particles"]
+position = Vector2(921, 576)
+
+[node name="h160" type="Node2D" parent="Particles"]
+position = Vector2(921, 568)
+
+[node name="h161" type="Node2D" parent="Particles"]
+position = Vector2(921, 561)
+
+[node name="h162" type="Node2D" parent="Particles"]
+position = Vector2(921, 556)
+
+[node name="h163" type="Node2D" parent="Particles"]
+position = Vector2(921, 548)
+
+[node name="h164" type="Node2D" parent="Particles"]
+position = Vector2(929, 548)
+
+[node name="h165" type="Node2D" parent="Particles"]
+position = Vector2(937, 548)
+
+[node name="h166" type="Node2D" parent="Particles"]
+position = Vector2(946, 548)
+
+[node name="h167" type="Node2D" parent="Particles"]
+position = Vector2(954, 548)
+
+[node name="h168" type="Node2D" parent="Particles"]
+position = Vector2(959, 548)
+
+[node name="h169" type="Node2D" parent="Particles"]
+position = Vector2(967, 549)
+
+[node name="h170" type="Node2D" parent="Particles"]
+position = Vector2(972, 549)
+
+[node name="h171" type="Node2D" parent="Particles"]
+position = Vector2(977, 549)
+
+[node name="h172" type="Node2D" parent="Particles"]
+position = Vector2(984, 549)
+
+[node name="h173" type="Node2D" parent="Particles"]
+position = Vector2(984, 553)
+
+[node name="h174" type="Node2D" parent="Particles"]
+position = Vector2(984, 558)
+
+[node name="h175" type="Node2D" parent="Particles"]
+position = Vector2(984, 562)
+
+[node name="h176" type="Node2D" parent="Particles"]
+position = Vector2(984, 570)
+
+[node name="h177" type="Node2D" parent="Particles"]
+position = Vector2(984, 566)
+
+[node name="h178" type="Node2D" parent="Particles"]
+position = Vector2(984, 573)
+
+[node name="h179" type="Node2D" parent="Particles"]
+position = Vector2(906, 576)
+
+[node name="h180" type="Node2D" parent="Particles"]
+position = Vector2(907, 571)
+
+[node name="h181" type="Node2D" parent="Particles"]
+position = Vector2(907, 566)
+
+[node name="h182" type="Node2D" parent="Particles"]
+position = Vector2(904, 566)
+
+[node name="h183" type="Node2D" parent="Particles"]
+position = Vector2(902, 566)
+
+[node name="h184" type="Node2D" parent="Particles"]
+position = Vector2(898, 566)
+
+[node name="h185" type="Node2D" parent="Particles"]
+position = Vector2(895, 566)
+
+[node name="h186" type="Node2D" parent="Particles"]
+position = Vector2(891, 566)
+
+[node name="h187" type="Node2D" parent="Particles"]
+position = Vector2(891, 568)
+
+[node name="h188" type="Node2D" parent="Particles"]
+position = Vector2(891, 571)
+
+[node name="h189" type="Node2D" parent="Particles"]
+position = Vector2(891, 575)
+
+[node name="h190" type="Node2D" parent="Particles"]
+position = Vector2(891, 573)
+
+[node name="h191" type="Node2D" parent="Particles"]
+position = Vector2(891, 563)
+
+[node name="h192" type="Node2D" parent="Particles"]
+position = Vector2(891, 560)
+
+[node name="h193" type="Node2D" parent="Particles"]
+position = Vector2(891, 556)
+
+[node name="h194" type="Node2D" parent="Particles"]
+position = Vector2(891, 553)
+
+[node name="h195" type="Node2D" parent="Particles"]
+position = Vector2(891, 549)
+
+[node name="h196" type="Node2D" parent="Particles"]
+position = Vector2(891, 545)
+
+[node name="h197" type="Node2D" parent="Particles"]
+position = Vector2(891, 541)
+
+[node name="h198" type="Node2D" parent="Particles"]
+position = Vector2(891, 537)
+
+[node name="h199" type="Node2D" parent="Particles"]
+position = Vector2(990, 575)
+
+[node name="h200" type="Node2D" parent="Particles"]
+position = Vector2(990, 573)
+
+[node name="h201" type="Node2D" parent="Particles"]
+position = Vector2(990, 570)
+
+[node name="h202" type="Node2D" parent="Particles"]
+position = Vector2(990, 567)
+
+[node name="h203" type="Node2D" parent="Particles"]
+position = Vector2(992, 567)
+
+[node name="h204" type="Node2D" parent="Particles"]
+position = Vector2(994, 567)
+
+[node name="h205" type="Node2D" parent="Particles"]
+position = Vector2(996, 567)
+
+[node name="h206" type="Node2D" parent="Particles"]
+position = Vector2(998, 567)
+
+[node name="h207" type="Node2D" parent="Particles"]
+position = Vector2(1000, 567)
+
+[node name="h208" type="Node2D" parent="Particles"]
+position = Vector2(1002, 567)
+
+[node name="h209" type="Node2D" parent="Particles"]
+position = Vector2(1002, 570)
+
+[node name="h210" type="Node2D" parent="Particles"]
+position = Vector2(1002, 573)
+
+[node name="h211" type="Node2D" parent="Particles"]
+position = Vector2(1002, 575)
+
+[node name="h212" type="Node2D" parent="Particles"]
+position = Vector2(1002, 565)
+
+[node name="h213" type="Node2D" parent="Particles"]
+position = Vector2(1002, 563)
+
+[node name="h214" type="Node2D" parent="Particles"]
+position = Vector2(1002, 561)
+
+[node name="h215" type="Node2D" parent="Particles"]
+position = Vector2(1002, 558)
+
+[node name="h216" type="Node2D" parent="Particles"]
+position = Vector2(1002, 556)
+
+[node name="h217" type="Node2D" parent="Particles"]
+position = Vector2(1002, 554)
+
+[node name="h218" type="Node2D" parent="Particles"]
+position = Vector2(1002, 552)
+
+[node name="h219" type="Node2D" parent="Particles"]
+position = Vector2(1002, 551)
+
+[node name="h220" type="Node2D" parent="Particles"]
+position = Vector2(1002, 549)
+
+[node name="h221" type="Node2D" parent="Particles"]
+position = Vector2(1002, 548)
+
+[node name="h222" type="Node2D" parent="Particles"]
+position = Vector2(1002, 545)
+
+[node name="h223" type="Node2D" parent="Particles"]
+position = Vector2(1002, 543)
+
+[node name="h224" type="Node2D" parent="Particles"]
+position = Vector2(1002, 541)
+
+[node name="h225" type="Node2D" parent="Particles"]
+position = Vector2(1002, 539)
+
+[node name="h226" type="Node2D" parent="Particles"]
+position = Vector2(1002, 539)
+
+[node name="h2" type="Node2D" parent="Particles"]
+position = Vector2(824, 544)
+
+[node name="h3" type="Node2D" parent="Particles"]
+position = Vector2(824, 521)
+
+[node name="h4" type="Node2D" parent="Particles"]
+position = Vector2(824, 500)
+
+[node name="h5" type="Node2D" parent="Particles"]
+position = Vector2(824, 479)
+
+[node name="h6" type="Node2D" parent="Particles"]
+position = Vector2(824, 461)
+
+[node name="h7" type="Node2D" parent="Particles"]
+position = Vector2(824, 445)
+
+[node name="h8" type="Node2D" parent="Particles"]
+position = Vector2(824, 426)
+
+[node name="h9" type="Node2D" parent="Particles"]
+position = Vector2(807, 426)
+
+[node name="h10" type="Node2D" parent="Particles"]
+position = Vector2(789, 426)
+
+[node name="h11" type="Node2D" parent="Particles"]
+position = Vector2(770, 426)
+
+[node name="h12" type="Node2D" parent="Particles"]
+position = Vector2(789, 408)
+
+[node name="h13" type="Node2D" parent="Particles"]
+position = Vector2(807, 393)
+
+[node name="h14" type="Node2D" parent="Particles"]
+position = Vector2(824, 380)
+
+[node name="h15" type="Node2D" parent="Particles"]
+position = Vector2(838, 368)
+
+[node name="h16" type="Node2D" parent="Particles"]
+position = Vector2(853, 355)
+
+[node name="h17" type="Node2D" parent="Particles"]
+position = Vector2(867, 343)
+
+[node name="h18" type="Node2D" parent="Particles"]
+position = Vector2(882, 330)
+
+[node name="h19" type="Node2D" parent="Particles"]
+position = Vector2(904, 330)
+
+[node name="h20" type="Node2D" parent="Particles"]
+position = Vector2(927, 330)
+
+[node name="h21" type="Node2D" parent="Particles"]
+position = Vector2(947, 330)
+
+[node name="h22" type="Node2D" parent="Particles"]
+position = Vector2(968, 330)
+
+[node name="h23" type="Node2D" parent="Particles"]
+position = Vector2(990, 330)
+
+[node name="h24" type="Node2D" parent="Particles"]
+position = Vector2(1010, 330)
+
+[node name="h25" type="Node2D" parent="Particles"]
+position = Vector2(1030, 330)
+
+[node name="h26" type="Node2D" parent="Particles"]
+position = Vector2(1050, 330)
+
+[node name="h27" type="Node2D" parent="Particles"]
+position = Vector2(1071, 330)
+
+[node name="h29" type="Node2D" parent="Particles"]
+position = Vector2(1114, 330)
+
+[node name="h30" type="Node2D" parent="Particles"]
+position = Vector2(1134, 330)
+
+[node name="h31" type="Node2D" parent="Particles"]
+position = Vector2(116, 592)
+
+[node name="h32" type="Node2D" parent="Particles"]
+position = Vector2(132, 581)
+
+[node name="h33" type="Node2D" parent="Particles"]
+position = Vector2(132, 556)
+
+[node name="h34" type="Node2D" parent="Particles"]
+position = Vector2(132, 531)
+
+[node name="h35" type="Node2D" parent="Particles"]
+position = Vector2(132, 567)
+
+[node name="h36" type="Node2D" parent="Particles"]
+position = Vector2(139, 544)
+
+[node name="h37" type="Node2D" parent="Particles"]
+position = Vector2(97, 594)
+
+[node name="h38" type="Node2D" parent="Particles"]
+position = Vector2(124, 587)
+
+[node name="h39" type="Node2D" parent="Particles"]
+position = Vector2(136, 520)
+
+[node name="h40" type="Node2D" parent="Particles"]
+position = Vector2(134, 512)
+
+[node name="h41" type="Node2D" parent="Particles"]
+position = Vector2(136, 497)
+
+[node name="h42" type="Node2D" parent="Particles"]
+position = Vector2(135, 484)
+
+[node name="h43" type="Node2D" parent="Particles"]
+position = Vector2(140, 472)
+
+[node name="h44" type="Node2D" parent="Particles"]
+position = Vector2(134, 463)
+
+[node name="h45" type="Node2D" parent="Particles"]
+position = Vector2(137, 453)
+
+[node name="h46" type="Node2D" parent="Particles"]
+position = Vector2(133, 441)
+
+[node name="h47" type="Node2D" parent="Particles"]
+position = Vector2(127, 485)
+
+[node name="h48" type="Node2D" parent="Particles"]
+position = Vector2(120, 480)
+
+[node name="h49" type="Node2D" parent="Particles"]
+position = Vector2(111, 477)
+
+[node name="h50" type="Node2D" parent="Particles"]
+position = Vector2(104, 483)
+
+[node name="h51" type="Node2D" parent="Particles"]
+position = Vector2(96, 489)
+
+[node name="h52" type="Node2D" parent="Particles"]
+position = Vector2(88, 486)
+
+[node name="h53" type="Node2D" parent="Particles"]
+position = Vector2(80, 481)
+
+[node name="h54" type="Node2D" parent="Particles"]
+position = Vector2(75, 475)
+
+[node name="h55" type="Node2D" parent="Particles"]
+position = Vector2(69, 468)
+
+[node name="h56" type="Node2D" parent="Particles"]
+position = Vector2(75, 487)
+
+[node name="h57" type="Node2D" parent="Particles"]
+position = Vector2(69, 492)
+
+[node name="h58" type="Node2D" parent="Particles"]
+position = Vector2(194, 596)
+
+[node name="h59" type="Node2D" parent="Particles"]
+position = Vector2(187, 591)
+
+[node name="h60" type="Node2D" parent="Particles"]
+position = Vector2(181, 584)
+
+[node name="h61" type="Node2D" parent="Particles"]
+position = Vector2(175, 575)
+
+[node name="h62" type="Node2D" parent="Particles"]
+position = Vector2(171, 568)
+
+[node name="h63" type="Node2D" parent="Particles"]
+position = Vector2(171, 561)
+
+[node name="h64" type="Node2D" parent="Particles"]
+position = Vector2(172, 554)
+
+[node name="h65" type="Node2D" parent="Particles"]
+position = Vector2(173, 543)
+
+[node name="h66" type="Node2D" parent="Particles"]
+position = Vector2(173, 534)
+
+[node name="h67" type="Node2D" parent="Particles"]
+position = Vector2(182, 535)
+
+[node name="h68" type="Node2D" parent="Particles"]
+position = Vector2(183, 529)
+
+[node name="h69" type="Node2D" parent="Particles"]
+position = Vector2(182, 518)
+
+[node name="h70" type="Node2D" parent="Particles"]
+position = Vector2(182, 513)
+
+[node name="h71" type="Node2D" parent="Particles"]
+position = Vector2(174, 507)
+
+[node name="h72" type="Node2D" parent="Particles"]
+position = Vector2(172, 498)
+
+[node name="h73" type="Node2D" parent="Particles"]
+position = Vector2(173, 488)
+
+[node name="h74" type="Node2D" parent="Particles"]
+position = Vector2(174, 476)
+
+[node name="h75" type="Node2D" parent="Particles"]
+position = Vector2(173, 466)
+
+[node name="h76" type="Node2D" parent="Particles"]
+position = Vector2(174, 458)
+
+[node name="h77" type="Node2D" parent="Particles"]
+position = Vector2(173, 452)
+
+[node name="h78" type="Node2D" parent="Particles"]
+position = Vector2(171, 443)
+
+[node name="h79" type="Node2D" parent="Particles"]
+position = Vector2(169, 438)
+
+[node name="h80" type="Node2D" parent="Particles"]
+position = Vector2(160, 436)
+
+[node name="h81" type="Node2D" parent="Particles"]
+position = Vector2(155, 436)
+
+[node name="h82" type="Node2D" parent="Particles"]
+position = Vector2(146, 436)
+
+[node name="h83" type="Node2D" parent="Particles"]
+position = Vector2(146, 447)
+
+[node name="h84" type="Node2D" parent="Particles"]
+position = Vector2(154, 449)
+
+[node name="h85" type="Node2D" parent="Particles"]
+position = Vector2(158, 449)
+
+[node name="h86" type="Node2D" parent="Particles"]
+position = Vector2(165, 461)
+
+[node name="h87" type="Node2D" parent="Particles"]
+position = Vector2(163, 451)
+
+[node name="h88" type="Node2D" parent="Particles"]
+position = Vector2(154, 465)
+
+[node name="h89" type="Node2D" parent="Particles"]
+position = Vector2(150, 461)
+
+[node name="h90" type="Node2D" parent="Particles"]
+position = Vector2(156, 461)
+
+[node name="h91" type="Node2D" parent="Particles"]
+position = Vector2(156, 476)
+
+[node name="h92" type="Node2D" parent="Particles"]
+position = Vector2(162, 473)
+
+[node name="h93" type="Node2D" parent="Particles"]
+position = Vector2(164, 489)
+
+[node name="h94" type="Node2D" parent="Particles"]
+position = Vector2(147, 486)
+
+[node name="h95" type="Node2D" parent="Particles"]
+position = Vector2(151, 481)
+
+[node name="h96" type="Node2D" parent="Particles"]
+position = Vector2(157, 497)
+
+[node name="h97" type="Node2D" parent="Particles"]
+position = Vector2(145, 497)
+
+[node name="h98" type="Node2D" parent="Particles"]
+position = Vector2(149, 508)
+
+[node name="h99" type="Node2D" parent="Particles"]
+position = Vector2(144, 507)
+
+[node name="h100" type="Node2D" parent="Particles"]
+position = Vector2(160, 509)
+
+[node name="h101" type="Node2D" parent="Particles"]
+position = Vector2(168, 514)
+
+[node name="h102" type="Node2D" parent="Particles"]
+position = Vector2(175, 526)
+
+[node name="h103" type="Node2D" parent="Particles"]
+position = Vector2(159, 522)
+
+[node name="h104" type="Node2D" parent="Particles"]
+position = Vector2(167, 525)
+
+[node name="h105" type="Node2D" parent="Particles"]
+position = Vector2(149, 519)
+
+[node name="h106" type="Node2D" parent="Particles"]
+position = Vector2(145, 525)
+
+[node name="h107" type="Node2D" parent="Particles"]
+position = Vector2(149, 533)
+
+[node name="h108" type="Node2D" parent="Particles"]
+position = Vector2(160, 537)
+
+[node name="h109" type="Node2D" parent="Particles"]
+position = Vector2(164, 545)
+
+[node name="h110" type="Node2D" parent="Particles"]
+position = Vector2(151, 543)
+
+[node name="h111" type="Node2D" parent="Particles"]
+position = Vector2(147, 552)
+
+[node name="h112" type="Node2D" parent="Particles"]
+position = Vector2(158, 552)
+
+[node name="h113" type="Node2D" parent="Particles"]
+position = Vector2(163, 562)
+
+[node name="h114" type="Node2D" parent="Particles"]
+position = Vector2(151, 561)
+
+[node name="h115" type="Node2D" parent="Particles"]
+position = Vector2(140, 563)
+
+[node name="h116" type="Node2D" parent="Particles"]
+position = Vector2(141, 573)
+
+[node name="h117" type="Node2D" parent="Particles"]
+position = Vector2(151, 573)
+
+[node name="h118" type="Node2D" parent="Particles"]
+position = Vector2(161, 573)
+
+[node name="h119" type="Node2D" parent="Particles"]
+position = Vector2(167, 582)
+
+[node name="h120" type="Node2D" parent="Particles"]
+position = Vector2(173, 587)
+
+[node name="h121" type="Node2D" parent="Particles"]
+position = Vector2(161, 588)
+
+[node name="h122" type="Node2D" parent="Particles"]
+position = Vector2(151, 587)
+
+[node name="h123" type="Node2D" parent="Particles"]
+position = Vector2(136, 591)
+
+[node name="h124" type="Node2D" parent="Particles"]
+position = Vector2(144, 584)
+
+[node name="h125" type="Node2D" parent="Particles"]
+position = Vector2(825, 554)
+
+[node name="h126" type="Node2D" parent="Particles"]
+position = Vector2(825, 571)
+
+[node name="h127" type="Node2D" parent="Particles"]
+position = Vector2(823, 532)
+
+[node name="h128" type="Node2D" parent="Particles"]
+position = Vector2(824, 510)
+
+[node name="h129" type="Node2D" parent="Particles"]
+position = Vector2(824, 489)
+
+[node name="h130" type="Node2D" parent="Particles"]
+position = Vector2(823, 470)
+
+[node name="h131" type="Node2D" parent="Particles"]
+position = Vector2(824, 455)
+
+[node name="h132" type="Node2D" parent="Particles"]
+position = Vector2(825, 436)
+
+[node name="h133" type="Node2D" parent="Particles"]
+position = Vector2(816, 426)
+
+[node name="h134" type="Node2D" parent="Particles"]
+position = Vector2(798, 425)
+
+[node name="h135" type="Node2D" parent="Particles"]
+position = Vector2(779, 427)
+
+[node name="h136" type="Node2D" parent="Particles"]
+position = Vector2(774, 420)
+
+[node name="h137" type="Node2D" parent="Particles"]
+position = Vector2(781, 416)
+
+[node name="h138" type="Node2D" parent="Particles"]
+position = Vector2(796, 401)
+
+[node name="h139" type="Node2D" parent="Particles"]
+position = Vector2(815, 387)
+
+[node name="h140" type="Node2D" parent="Particles"]
+position = Vector2(830, 375)
+
+[node name="h141" type="Node2D" parent="Particles"]
+position = Vector2(846, 362)
+
+[node name="h142" type="Node2D" parent="Particles"]
+position = Vector2(862, 349)
+
+[node name="h143" type="Node2D" parent="Particles"]
+position = Vector2(874, 335)
+
+[node name="h144" type="Node2D" parent="Particles"]
+position = Vector2(894, 329)
+
+[node name="h145" type="Node2D" parent="Particles"]
+position = Vector2(917, 329)
+
+[node name="h146" type="Node2D" parent="Particles"]
+position = Vector2(937, 329)
+
+[node name="h147" type="Node2D" parent="Particles"]
+position = Vector2(959, 329)
+
+[node name="h148" type="Node2D" parent="Particles"]
+position = Vector2(975, 329)
+
+[node name="h149" type="Node2D" parent="Particles"]
+position = Vector2(984, 330)
+
+[node name="h150" type="Node2D" parent="Particles"]
+position = Vector2(1000, 329)
+
+[node name="h151" type="Node2D" parent="Particles"]
+position = Vector2(1021, 329)
+
+[node name="h152" type="Node2D" parent="Particles"]
+position = Vector2(1038, 329)
+
+[node name="h153" type="Node2D" parent="Particles"]
+position = Vector2(1061, 329)
+
+[node name="h156" type="Node2D" parent="Particles"]
+position = Vector2(1121, 329)
+
+[node name="h157" type="Node2D" parent="Particles"]
+position = Vector2(1145, 330)
+
+[node name="h158" type="Node2D" parent="Particles"]
+position = Vector2(1145, 330)
+
+[node name="l" type="Node2D" parent="Particles"]
+position = Vector2(63, 460)
+
+[node name="l2" type="Node2D" parent="Particles"]
+position = Vector2(74, 457)
+
+[node name="l3" type="Node2D" parent="Particles"]
+position = Vector2(77, 461)
+
+[node name="l4" type="Node2D" parent="Particles"]
+position = Vector2(59, 469)
+
+[node name="l5" type="Node2D" parent="Particles"]
+position = Vector2(50, 464)
+
+[node name="l6" type="Node2D" parent="Particles"]
+position = Vector2(48, 456)
+
+[node name="l7" type="Node2D" parent="Particles"]
+position = Vector2(53, 451)
+
+[node name="l8" type="Node2D" parent="Particles"]
+position = Vector2(60, 451)
+
+[node name="l9" type="Node2D" parent="Particles"]
+position = Vector2(68, 450)
+
+[node name="l10" type="Node2D" parent="Particles"]
+position = Vector2(55, 475)
+
+[node name="l11" type="Node2D" parent="Particles"]
+position = Vector2(63, 498)
+
+[node name="l12" type="Node2D" parent="Particles"]
+position = Vector2(57, 488)
+
+[node name="l13" type="Node2D" parent="Particles"]
+position = Vector2(53, 482)
+
+[node name="l14" type="Node2D" parent="Particles"]
+position = Vector2(48, 497)
+
+[node name="l15" type="Node2D" parent="Particles"]
+position = Vector2(55, 499)
+
+[node name="l16" type="Node2D" parent="Particles"]
+position = Vector2(57, 505)
+
+[node name="l17" type="Node2D" parent="Particles"]
+position = Vector2(71, 506)
+
+[node name="l18" type="Node2D" parent="Particles"]
+position = Vector2(68, 512)
+
+[node name="l19" type="Node2D" parent="Particles"]
+position = Vector2(60, 512)
+
+[node name="l20" type="Node2D" parent="Particles"]
+position = Vector2(52, 514)
+
+[node name="l21" type="Node2D" parent="Particles"]
+position = Vector2(47, 507)
+
+[node name="l22" type="Node2D" parent="Particles"]
+position = Vector2(131, 434)
+
+[node name="l23" type="Node2D" parent="Particles"]
+position = Vector2(124, 441)
+
+[node name="l24" type="Node2D" parent="Particles"]
+position = Vector2(120, 447)
+
+[node name="l25" type="Node2D" parent="Particles"]
+position = Vector2(113, 447)
+
+[node name="l26" type="Node2D" parent="Particles"]
+position = Vector2(106, 444)
+
+[node name="l27" type="Node2D" parent="Particles"]
+position = Vector2(99, 440)
+
+[node name="l28" type="Node2D" parent="Particles"]
+position = Vector2(97, 434)
+
+[node name="l29" type="Node2D" parent="Particles"]
+position = Vector2(94, 422)
+
+[node name="l30" type="Node2D" parent="Particles"]
+position = Vector2(99, 416)
+
+[node name="l31" type="Node2D" parent="Particles"]
+position = Vector2(104, 407)
+
+[node name="l32" type="Node2D" parent="Particles"]
+position = Vector2(105, 399)
+
+[node name="l33" type="Node2D" parent="Particles"]
+position = Vector2(109, 391)
+
+[node name="l34" type="Node2D" parent="Particles"]
+position = Vector2(117, 385)
+
+[node name="l35" type="Node2D" parent="Particles"]
+position = Vector2(128, 379)
+
+[node name="l36" type="Node2D" parent="Particles"]
+position = Vector2(135, 370)
+
+[node name="l37" type="Node2D" parent="Particles"]
+position = Vector2(144, 365)
+
+[node name="l38" type="Node2D" parent="Particles"]
+position = Vector2(154, 367)
+
+[node name="l39" type="Node2D" parent="Particles"]
+position = Vector2(164, 364)
+
+[node name="l40" type="Node2D" parent="Particles"]
+position = Vector2(173, 359)
+
+[node name="l41" type="Node2D" parent="Particles"]
+position = Vector2(181, 365)
+
+[node name="l42" type="Node2D" parent="Particles"]
+position = Vector2(188, 367)
+
+[node name="l43" type="Node2D" parent="Particles"]
+position = Vector2(196, 375)
+
+[node name="l44" type="Node2D" parent="Particles"]
+position = Vector2(205, 382)
+
+[node name="l45" type="Node2D" parent="Particles"]
+position = Vector2(211, 389)
+
+[node name="l46" type="Node2D" parent="Particles"]
+position = Vector2(214, 396)
+
+[node name="l47" type="Node2D" parent="Particles"]
+position = Vector2(216, 404)
+
+[node name="l48" type="Node2D" parent="Particles"]
+position = Vector2(212, 416)
+
+[node name="l49" type="Node2D" parent="Particles"]
+position = Vector2(204, 428)
+
+[node name="l50" type="Node2D" parent="Particles"]
+position = Vector2(198, 436)
+
+[node name="l51" type="Node2D" parent="Particles"]
+position = Vector2(184, 445)
+
+[node name="l52" type="Node2D" parent="Particles"]
+position = Vector2(189, 440)
+
+[node name="l53" type="Node2D" parent="Particles"]
+position = Vector2(181, 424)
+
+[node name="l54" type="Node2D" parent="Particles"]
+position = Vector2(182, 435)
+
+[node name="l55" type="Node2D" parent="Particles"]
+position = Vector2(190, 425)
+
+[node name="l56" type="Node2D" parent="Particles"]
+position = Vector2(196, 422)
+
+[node name="l57" type="Node2D" parent="Particles"]
+position = Vector2(199, 407)
+
+[node name="l58" type="Node2D" parent="Particles"]
+position = Vector2(203, 409)
+
+[node name="l59" type="Node2D" parent="Particles"]
+position = Vector2(200, 401)
+
+[node name="l60" type="Node2D" parent="Particles"]
+position = Vector2(191, 414)
+
+[node name="l61" type="Node2D" parent="Particles"]
+position = Vector2(176, 415)
+
+[node name="l62" type="Node2D" parent="Particles"]
+position = Vector2(169, 429)
+
+[node name="l63" type="Node2D" parent="Particles"]
+position = Vector2(154, 425)
+
+[node name="l64" type="Node2D" parent="Particles"]
+position = Vector2(141, 426)
+
+[node name="l65" type="Node2D" parent="Particles"]
+position = Vector2(127, 426)
+
+[node name="l66" type="Node2D" parent="Particles"]
+position = Vector2(116, 432)
+
+[node name="l67" type="Node2D" parent="Particles"]
+position = Vector2(105, 431)
+
+[node name="l68" type="Node2D" parent="Particles"]
+position = Vector2(106, 424)
+
+[node name="l69" type="Node2D" parent="Particles"]
+position = Vector2(115, 421)
+
+[node name="l70" type="Node2D" parent="Particles"]
+position = Vector2(112, 415)
+
+[node name="l71" type="Node2D" parent="Particles"]
+position = Vector2(117, 410)
+
+[node name="l72" type="Node2D" parent="Particles"]
+position = Vector2(116, 403)
+
+[node name="l73" type="Node2D" parent="Particles"]
+position = Vector2(122, 402)
+
+[node name="l74" type="Node2D" parent="Particles"]
+position = Vector2(126, 418)
+
+[node name="l75" type="Node2D" parent="Particles"]
+position = Vector2(135, 418)
+
+[node name="l76" type="Node2D" parent="Particles"]
+position = Vector2(150, 417)
+
+[node name="l77" type="Node2D" parent="Particles"]
+position = Vector2(165, 418)
+
+[node name="l78" type="Node2D" parent="Particles"]
+position = Vector2(151, 409)
+
+[node name="l79" type="Node2D" parent="Particles"]
+position = Vector2(143, 407)
+
+[node name="l80" type="Node2D" parent="Particles"]
+position = Vector2(133, 407)
+
+[node name="l81" type="Node2D" parent="Particles"]
+position = Vector2(164, 407)
+
+[node name="l82" type="Node2D" parent="Particles"]
+position = Vector2(182, 406)
+
+[node name="l83" type="Node2D" parent="Particles"]
+position = Vector2(183, 402)
+
+[node name="l84" type="Node2D" parent="Particles"]
+position = Vector2(193, 393)
+
+[node name="l85" type="Node2D" parent="Particles"]
+position = Vector2(183, 387)
+
+[node name="l86" type="Node2D" parent="Particles"]
+position = Vector2(190, 382)
+
+[node name="l87" type="Node2D" parent="Particles"]
+position = Vector2(200, 393)
+
+[node name="l88" type="Node2D" parent="Particles"]
+position = Vector2(176, 396)
+
+[node name="l89" type="Node2D" parent="Particles"]
+position = Vector2(167, 400)
+
+[node name="l90" type="Node2D" parent="Particles"]
+position = Vector2(154, 400)
+
+[node name="l91" type="Node2D" parent="Particles"]
+position = Vector2(141, 399)
+
+[node name="l92" type="Node2D" parent="Particles"]
+position = Vector2(129, 398)
+
+[node name="l93" type="Node2D" parent="Particles"]
+position = Vector2(122, 396)
+
+[node name="l94" type="Node2D" parent="Particles"]
+position = Vector2(136, 391)
+
+[node name="l95" type="Node2D" parent="Particles"]
+position = Vector2(131, 388)
+
+[node name="l96" type="Node2D" parent="Particles"]
+position = Vector2(144, 385)
+
+[node name="l97" type="Node2D" parent="Particles"]
+position = Vector2(141, 377)
+
+[node name="l98" type="Node2D" parent="Particles"]
+position = Vector2(154, 394)
+
+[node name="l99" type="Node2D" parent="Particles"]
+position = Vector2(164, 394)
+
+[node name="l100" type="Node2D" parent="Particles"]
+position = Vector2(170, 385)
+
+[node name="l101" type="Node2D" parent="Particles"]
+position = Vector2(178, 377)
+
+[node name="l102" type="Node2D" parent="Particles"]
+position = Vector2(170, 372)
+
+[node name="l103" type="Node2D" parent="Particles"]
+position = Vector2(162, 381)
+
+[node name="l104" type="Node2D" parent="Particles"]
+position = Vector2(157, 390)
+
+[node name="l105" type="Node2D" parent="Particles"]
+position = Vector2(154, 381)
+
+[node name="l106" type="Node2D" parent="Particles"]
+position = Vector2(154, 377)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(1149, 582, 1090, 582, 1089, 600, 1008, 598, 1007, 580, 818, 579, 817, 598, 754, 599, 754, 612, 578, 614, 574, 597, 367, 598, 366, 581, 273, 580, 274, 599, -1, 598, -5, 655, 1150, 653)
+
+[node name="Softwood" type="Node2D" parent="."]
+position = Vector2(1050, 486)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2"]
+polygon = PackedVector2Array(1147, 608, 1148, 0, 1170, -1, 1170, 713, -33, 688, -26, -1, -1, -1, 0, 655, 1148, 652)
+
+[node name="title" parent="." instance=ExtResource("4_nrrbx")]
+text = "
+[center][wave]Clear Room for Ye Old Mini Mall!"
+
+[node name="placeable_area" parent="." instance=ExtResource("5_qmi1m")]
+offset_left = 446.0
+offset_top = 343.0
+offset_right = 618.015
+offset_bottom = 407.0
